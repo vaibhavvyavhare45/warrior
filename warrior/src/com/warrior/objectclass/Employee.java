@@ -14,21 +14,21 @@ public class Employee implements Cloneable {
 		this.id = id;
 		this.nm = nm;
 	}
-//	@Override
-//	public int hashCode() {
-//		return Objects.hash(id, nm);
-//	}
-//	@Override
-//	public boolean equals(Object obj) {
-//		if (this == obj)
-//			return true;
-//		if (obj == null)
-//			return false;
-//		if (getClass() != obj.getClass())
-//			return false;
-//		Employee other = (Employee) obj;
-//		return id == other.id && Objects.equals(nm, other.nm);
-//	}
+	@Override
+	public int hashCode() {
+		return Objects.hash(id, nm);
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Employee other = (Employee) obj;
+		return id == other.id && Objects.equals(nm, other.nm);
+	}
 //	
 	public static void main(String[] args)throws CloneNotSupportedException {
 		Employee s=new Employee();//content equality//reference equality
