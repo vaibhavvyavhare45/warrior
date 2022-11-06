@@ -1,4 +1,4 @@
-package com.warrior.prowing;
+package com.warrior.interviewprogram;
 
 import java.util.Scanner;
 
