@@ -18,6 +18,5 @@ public class WordOccurenceInHashMap1 {
 		}
 		System.out.println(m);
 	}
-
-}
+} 
 
